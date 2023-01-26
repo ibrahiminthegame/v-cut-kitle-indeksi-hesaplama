@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vücut kitle indeksi hesaplama</title>
+</head>
+<body>
+    <script>
+                // ! VÜCUT KİTLE iNDEKSİ HESAPLAMA (JavaScript) --------->>>>
+
+        //?https://www.acibadem.com.tr/ilgi-alani/vucut-kitle-indeksi-hesaplama/#genel-tanitim
+
+        let kilo = Number (prompt("Kilonuzu giriniz"));
+        let boy = Number (prompt("Boyunuzu metre cinsinden giriniz örn: 1.78"));
+        let sonuc = kilo/(boy*2);
+
+        if(sonuc<18.5){
+            console.log("İdeal kilonun altında : "+sonuc)
+        }else if(sonuc>=18.5 && sonuc<=24.9){
+            console.log("İdeal kiloda : "+sonuc)
+        }else if(sonuc>=25 && sonuc<=29.9){
+            console.log("İdeal kilonun üstünde : "+sonuc)
+        }else if(sonuc>=30 && sonuc<=39.9){
+            console.log("İdeal kilonun çok üstünde (obez) : "+sonuc)
+        }else if(sonuc>=40){
+            console.log("İdeal kilonun çok üstünde (morbid obez) : "+sonuc)
+        }
+    </script>
+    
+</body>
+</html>
